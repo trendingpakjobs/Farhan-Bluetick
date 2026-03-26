@@ -1,29 +1,36 @@
-// Hamburger toggle
+// ===== HAMBURGER MENU =====
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
-hamburger?.addEventListener('click', ()=>{ navLinks.classList.toggle('show'); });
+hamburger.addEventListener('click', () => { navLinks.classList.toggle('active'); });
 
-// Stats auto-count
+// ===== STATS COUNTER =====
 const stats = document.querySelectorAll('.stat p');
-const speed = 200;
-stats.forEach(stat=>{
+stats.forEach(stat => {
   const updateCount = () => {
     const target = +stat.parentElement.dataset.target;
-    const count = +stat.innerText.replace(/\D/g,'');
-    const increment = Math.ceil(target/speed);
-    if(count<target){
-      stat.innerText = count + increment >= target ? target : count + increment;
-      setTimeout(updateCount,30);
+    const count = +stat.innerText;
+    const increment = target / 200; // speed
+    if(count < target){
+      stat.innerText = Math.ceil(count + increment);
+      setTimeout(updateCount, 20);
     } else { stat.innerText = target.toLocaleString(); }
-  }
+  };
   updateCount();
 });
 
-// Scroll animations
-const cards = document.querySelectorAll('.show-on-scroll');
-const observer = new IntersectionObserver(entries=>{
-  entries.forEach(entry=>{
-    if(entry.isIntersecting){ entry.target.classList.add('show'); }
+// ===== SCROLL ANIMATION =====
+const scrollElements = document.querySelectorAll('.show-on-scroll');
+const elementInView = (el, dividend=1) => {
+  const elementTop = el.getBoundingClientRect().top;
+  return elementTop <= (window.innerHeight / dividend);
+};
+const displayScrollElement = (el) => { el.style.opacity = 1; el.style.transform = 'translateY(0)'; };
+const hideScrollElement = (el) => { el.style.opacity = 0; el.style.transform = 'translateY(50px)'; };
+
+const handleScrollAnimation = () => {
+  scrollElements.forEach(el => {
+    if(elementInView(el,1.25)) displayScrollElement(el);
+    else hideScrollElement(el);
   });
-},{threshold:0.2});
-cards.forEach(card=>observer.observe(card));
+};
+window.addEventListener('scroll', handleScrollAnimation);
