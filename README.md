@@ -1,45 +1,64 @@
-# Farhan Bluetick Fan-Made Portfolio & Umar Farooq Developer Page
+# Farhan Bluetick & Developer Portfolio
 
-![Farhan Bluetick Logo](images/farhan-logo.png)
+Fan-made portfolio showcasing **Farhan Bluetick**’s YouTube content and the developer behind this site, **Umar Farooq**.
 
-This is a fan-made portfolio for **Farhan Bluetick**, showcasing his Pakistan vs India comparison videos across cities, roads, airports, hospitality, lifestyle, and more. Each section includes a short description and a red YouTube button linking directly to his videos.
+## 🌐 Live Pages
 
-Additionally, this repository includes a **professional developer page for Umar Farooq**, offering custom web development services such as portfolio, business, landing, and eCommerce websites at reliable rates. Visitors can contact via WhatsApp or email, and see project stats.
+- **Farhan Bluetick Portfolio** – [View Page](https://trendingpakjobs.github.io/Farhan-Bluetick/)  
+  Fan-made platform for Farhan Bluetick, featuring his videos, stats, and about section. Fully responsive, animated, and SEO-optimized.
 
-## Features
+- **Developer Portfolio** – [View Page](https://trendingpakjobs.github.io/Farhan-Bluetick/developer-page.html)  
+  Portfolio of **Umar Farooq**, professional web developer specializing in portfolios, business, e-commerce, and landing pages. Contact via WhatsApp or Email.
 
-- Fully **responsive** design for desktop and mobile  
-- **Hero section**: desktop – right image, left text; mobile – image as background  
-- **Auto-count stats** animation  
-- **Card sections** with scroll-triggered slide-in animations and hover effects  
-- **Floating buttons**: YouTube for Farhan, WhatsApp for Developer  
-- **SEO optimized** for both pages  
-- **Shared CSS & JS** for consistent styling and functionality  
-- Hamburger menu for mobile navigation  
-- CTA buttons linking to YouTube channel or developer WhatsApp  
+## 🖼️ Images
 
-## File Structure
+- Hero / Logo: `images/farhan-hero.png`  
+- Developer Logo: `images/developer-logo.png`  
+- Banner: `images/banner-farhan.png`, `images/banner-16-9.png`  
 
+*(Make sure these are uploaded in the `images` folder)*
 
+## 🎥 Farhan Bluetick Videos
 
-## How to Use
+| Topic | YouTube Link |
+|-------|-------------|
+| Airport | [Watch](https://youtube.com/shorts/dJIsPsEcskk?si=BsCjrpx_49D3DAKU) |
+| Hospitality | [Watch](https://youtube.com/shorts/-9fet7TAD5c?si=Klpl0he0MPc8OozQ) |
+| Festivals | [Watch](https://youtube.com/shorts/0jeXWzN4wGE?si=o0h1jpDrKuOBAygc) |
+| City Comparison | [Watch](https://youtube.com/shorts/vJCGjfYUF5Y?si=AKd_yHRM5ROSb6zE) |
+| Military | [Watch](https://youtube.com/shorts/yV7yJUhAH5w?si=0eb63P3VzjCFWqog) |
+| Railway | [Watch](https://youtube.com/shorts/fButLrba_KE?si=G0N-syGV_rOwYGSE) |
+| Roads | [Watch](https://youtube.com/shorts/9u02tBskF6I?si=3e_uqigbZTHA7nXk) |
+| Civic Sense | [Watch](https://youtube.com/shorts/5FKgVwZnbo0?si=hdVEBtZEJHcsGbkn) |
+| Pakistan Reality | [Watch](https://youtube.com/shorts/cn1RJ9WkxKk?si=wsHmRBtTfWIazLFQ) |
+| Lifestyle | [Watch](https://youtube.com/shorts/QDUV9GTrkvM?si=DOp_BVxJaQ6wNG1-) |
+| Explore More | [YouTube Channel](https://youtube.com/@farhan-bluetick?si=p6cindCx7Ol6fGiy) |
 
-1. Clone this repository  
-2. Add hero, banner, and logo images to `/images` folder  
-3. Open `farhan-page.html` or `developer-page.html` in your browser  
-4. Edit links or stats as needed  
+## 📊 Farhan Stats
 
-## Contact
+- **65M+ views**  
+- **95k+ subscribers**  
+- **120+ videos**  
 
-- **Developer (Umar Farooq)**  
-  - WhatsApp: [Message Me](https://wa.me/923049622076)  
-  - Email: contactme2756123@gmail.com  
+## 🛠️ Technologies Used
 
-- **Farhan Bluetick**  
-  - YouTube: [Farhan Bluetick Channel](https://youtube.com/@farhan-bluetick?si=p6cindCx7Ol6fGiy)  
-  - Instagram: [@farhanbluetick](https://www.instagram.com/farhanbluetick)  
-  - WhatsApp Channel: [Link](https://whatsapp.com/channel/0029VaFiPM6KLaHqpStwcK1l)
+- HTML5 / CSS3 / JavaScript  
+- Responsive design (Desktop & Mobile)  
+- Scroll animations & hover effects  
+- Floating buttons (YouTube / WhatsApp)  
+- SEO optimized  
 
----
+## 📂 File Structure
 
-**Note:** This portfolio is a fan-made project showcasing Farhan Bluetick's content and also demonstrates the developer's web design skills. All videos belong to their respective owners.
+```text
+/Farhan-Bluetick
+  /images
+    farhan-hero.png
+    banner-farhan.png
+    developer-logo.png
+    banner-16-9.png
+  index.html
+  developer-page.html
+  shared-style.css
+  shared-script.js
+  README.md
