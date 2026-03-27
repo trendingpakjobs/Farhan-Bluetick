@@ -315,50 +315,44 @@ body {
 
 
 
-.banner-farhan {
-  display:flex;
-  justify-content:flex-end;
-  align-items:center;
-  padding:4rem 2rem;
-}
-
-.banner-farhan .banner-img img {
-  width:320px;
-  border-radius:15px;
-}
-
-/* MOBILE = FULL BG */
-@media(max-width:768px){
-  .banner-farhan {
-    background:url('banner-16-9.png') center/cover no-repeat;
-    height:300px;
-  }
-
-  .banner-farhan .banner-img {
-    display:none;
-  }
-}
-
-
 .banner-dev {
-  display:flex;
-  justify-content:flex-end;
-  align-items:center;
-  padding:4rem 2rem;
+  width:100%;
+  max-width:1200px;
+  margin:2rem auto;
+  padding:0 1rem;
 }
 
-.banner-dev .banner-img img {
-  width:220px;
+.banner-dev img {
+  width:100%;
+  height:auto;
+  display:block;
   border-radius:15px;
 }
 
 /* MOBILE */
 @media(max-width:768px){
   .banner-dev {
-    justify-content:center;
+    margin:1rem auto;
   }
+}
 
-  .banner-dev .banner-img img {
-    width:160px;
+.banner-farhan {
+  width:100%;
+  max-width:1200px;
+  margin:2rem auto;
+  padding:0 1rem;
+}
+
+.banner-farhan img {
+  width:100%;
+  height:auto;
+  display:block;
+  border-radius:15px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .banner-farhan {
+    margin:1rem auto;
   }
 }
