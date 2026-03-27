@@ -312,3 +312,53 @@ footer {
 body {
   padding-top:80px;
 }
+
+
+
+.banner-farhan {
+  display:flex;
+  justify-content:flex-end;
+  align-items:center;
+  padding:4rem 2rem;
+}
+
+.banner-farhan .banner-img img {
+  width:320px;
+  border-radius:15px;
+}
+
+/* MOBILE = FULL BG */
+@media(max-width:768px){
+  .banner-farhan {
+    background:url('banner-16-9.png') center/cover no-repeat;
+    height:300px;
+  }
+
+  .banner-farhan .banner-img {
+    display:none;
+  }
+}
+
+
+.banner-dev {
+  display:flex;
+  justify-content:flex-end;
+  align-items:center;
+  padding:4rem 2rem;
+}
+
+.banner-dev .banner-img img {
+  width:220px;
+  border-radius:15px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .banner-dev {
+    justify-content:center;
+  }
+
+  .banner-dev .banner-img img {
+    width:160px;
+  }
+}
