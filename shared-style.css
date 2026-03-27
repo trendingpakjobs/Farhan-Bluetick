@@ -293,3 +293,22 @@ footer {
     gap:2rem;
   }
 }
+
+
+.navbar {
+  position:fixed;   /* sticky se better */
+  top:0;
+  left:0;
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:1rem 2rem;
+  background:#111;
+  z-index:1000;
+}
+
+/* content neeche na chala jaye */
+body {
+  padding-top:80px;
+}
